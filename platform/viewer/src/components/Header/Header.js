@@ -10,7 +10,7 @@ import OHIFLogo from '../OHIFLogo/OHIFLogo.js';
 import './Header.css';
 
 function Header(props) {
-  const {
+  let {
     t,
     user,
     userManager,
@@ -21,7 +21,7 @@ function Header(props) {
     location,
     children,
   } = props;
-
+  //useLargeLogo = false;
   const [options, setOptions] = useState([]);
   const hasLink = linkText && linkPath;
 
